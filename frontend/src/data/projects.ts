@@ -1,21 +1,37 @@
 // src/data/projects.ts
+import { links } from "./links";
+
 export const projects = [
   {
-    title: "Maintainability Analyzer",
-    slug: "maintainability-analyzer",
-    description: "LLM pipeline that flags poor code structure and generates explanations.",
-    tech: ["FastAPI", "Celery", "CodeT5p"],
+    title: "MultiLang Docstring Extractor",
+    slug: "doc-extractor",
+    description: "A parser-based tool to extracts inline documentation from codebases into JSON objects for LLM ingestion.",
+    tech: ["Python", "LLM pipeline", "Tree-sitter", "Syntax Trees", "DFS", "Stacks", "Hashing"],
+    github: `${links.github}/doc-extractor`,
+    liveDemo: null,
   },
   {
-    title: "Gold Price Predictor",
-    slug: "gold-price-predictor",
-    description: "Uses macroeconomic data to predict gold price movements.",
-    tech: ["scikit-learn", "XGBoost", "Streamlit"],
+    title: "MMORPG Automation Bot",
+    slug: "aqw-bot",
+    description: "A Go command-line bot that automates gameplay using OCR + window detection.",
+    tech: ["Go", "Cobra", "Python", "Xdotool", "Linux", "CLI Automation", "EasyOCR", "Cross-language Scripting"],
+    github: `${links.github}/aqw-bot`,
+    liveDemo: null,
   },
   {
-    title: "AQW Automation CLI",
-    slug: "aqw-cli",
-    description: "A Go-based bot that automates gameplay using OCR + window detection.",
-    tech: ["Go", "xdotool", "Tesseract OCR"],
+    title: "TicTacToe Minmax visualization",
+    slug: "minimax-visualizer",
+    description: "A Python app that visualizes the Minimax algorithm for TicTacToe.",
+    tech: ["Python", "Tkinter", "Decision Trees", "Minmax Algorithm", "Recursion", "AI Player"],
+    github: `${links.github}/doc-extractor`,
+    liveDemo: null,
+  },
+  {
+    title: "Paper Trail",
+    slug: "paper-trail",
+    description: "A lightweight document search tool that indexes and previews your files, allowing you to locate the right document without manually opening each file. ",
+    tech: ["Python", "FAISS", "PyQt", "SQLite", "SentenceTransformers", "Semantic Search"],
+    github: `${links.github}/paper-trail`,
+    liveDemo: null,
   },
 ];
